@@ -12,6 +12,10 @@
 		406040741D23331500ED6904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406040721D23331500ED6904 /* Main.storyboard */; };
 		406040761D23331500ED6904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406040751D23331500ED6904 /* Assets.xcassets */; };
 		406040791D23331500ED6904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406040771D23331500ED6904 /* LaunchScreen.storyboard */; };
+		406040821D23333300ED6904 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406040811D23333300ED6904 /* Post.swift */; };
+		406040871D234A8800ED6904 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406040861D234A8800ED6904 /* PostCell.swift */; };
+		4060408A1D23549900ED6904 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406040891D23549900ED6904 /* AddPostVC.swift */; };
+		4060408D1D239D8300ED6904 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060408C1D239D8300ED6904 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		406040751D23331500ED6904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		406040781D23331500ED6904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4060407A1D23331500ED6904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		406040811D23333300ED6904 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		406040861D234A8800ED6904 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		406040891D23549900ED6904 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		4060408C1D239D8300ED6904 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		4060406D1D23331500ED6904 /* my-hood-blindcoders */ = {
 			isa = PBXGroup;
 			children = (
+				4060408B1D239D6400ED6904 /* Services */,
+				406040801D23331E00ED6904 /* Model */,
+				406040831D2349D500ED6904 /* View */,
+				406040881D2353B500ED6904 /* Controller */,
 				4060406E1D23331500ED6904 /* AppDelegate.swift */,
-				406040701D23331500ED6904 /* ViewController.swift */,
-				406040721D23331500ED6904 /* Main.storyboard */,
 				406040751D23331500ED6904 /* Assets.xcassets */,
-				406040771D23331500ED6904 /* LaunchScreen.storyboard */,
 				4060407A1D23331500ED6904 /* Info.plist */,
 			);
 			path = "my-hood-blindcoders";
+			sourceTree = "<group>";
+		};
+		406040801D23331E00ED6904 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				406040811D23333300ED6904 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		406040831D2349D500ED6904 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				406040771D23331500ED6904 /* LaunchScreen.storyboard */,
+				406040721D23331500ED6904 /* Main.storyboard */,
+				406040861D234A8800ED6904 /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		406040881D2353B500ED6904 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				406040701D23331500ED6904 /* ViewController.swift */,
+				406040891D23549900ED6904 /* AddPostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4060408B1D239D6400ED6904 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4060408C1D239D8300ED6904 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				406040821D23333300ED6904 /* Post.swift in Sources */,
 				406040711D23331500ED6904 /* ViewController.swift in Sources */,
+				4060408A1D23549900ED6904 /* AddPostVC.swift in Sources */,
+				4060408D1D239D8300ED6904 /* DataService.swift in Sources */,
 				4060406F1D23331500ED6904 /* AppDelegate.swift in Sources */,
+				406040871D234A8800ED6904 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
